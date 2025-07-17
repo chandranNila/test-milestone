@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- navbar session start -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/logo.png" alt="Logo" />
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#">Experience 1440</a>
+      <a href="#">Our Purpose</a>
+      <a href="#">Online Learning</a>
+      <a href="#">About 1440</a>
+      <a href="#">Stories</a>
+      <a href="#">More</a>
+    </div>
+
+    <div class="actions">
+      <button class="book-btn">Book Now</button>
+      <span class="search-icon">&#128269;</span>
+    </div>
+  </nav>
+  <!-- navbar session end -->
+  <!-- carousel session start -->
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <video style="width: 100%; height: 500px; object-fit: cover;" autoplay muted loop>
+          <source src="./videos/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="slide">
+        <video style="width: 100%; height: 500px; object-fit: cover;" autoplay muted loop>
+          <source src="./videos//video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="slide">
+        <video style="width: 100%; height: 500px; object-fit: cover;" autoplay muted loop>
+          <source src="./videos//video3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button onclick="prevSlide()">❮</button>
+      <button onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+  <!-- carousel session end -->
+
+  <!-- Content session start -->
+  <div class="head-content">
+    <h1>Let the Silence of the Forest Speak Loudly Within You</h1>
+    <hr>
+    <div class="content-wrapper">
+      <div id="text" class="content">
+        <p>Amid the hushed tones of the forest, where light dances through leaves and every breath feels sacred, silence
+          becomes more than absence—it transforms into wisdom. With every step, the quiet reveals truths words cannot
+          hold, grounding you in presence and awakening what often lies unnoticed. Trees stand like sentinels, echoing
+          stories in rustling leaves and shifting shadows. The forest doesn’t shout, it whispers—and yet its stillness
+          speaks louder than any voice, reminding you of who you are beneath noise, expectation, and distraction. Let
+          the silence of the forest speak loudly within you, and you’ll rediscover the sound of your own soul..</p>
+      </div>
+      <div class="container">
+        <div id="toggle-add" class="icon-btn" onclick="toggleButtons('toggle-add', 'toggle-remove')">
+          +
+        </div>
+        <div id="toggle-remove" class="icon-btn" onclick="toggleButtons('toggle-remove', 'toggle-add')"
+          style="display: none;">
+          -
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content session end -->
+
+  <!-- image session start -->
+  <div class="image-container">
+    <img src="./images//image-5.png" alt="Image 1">
+    <img src="./images/image-6.png" alt="Image 2">
+  </div>
+  <!-- image session end -->
+
+  <!-- Footer session start -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h2>🤝 MAKE A DONATION</h2>
+    </div>
+    <div class="footer-right">
+      <a href="#">FAQs</a>
+      <a href="#">Blog</a>
+      <a href="#">Image Gallery</a>
+      <a href="#">Public Health & Safety</a>
+      <a href="#">Contact Us</a>
+      <a href="#">1440.tv</a>
+      <a href="#">1440 Foundation</a>
+      <a href="#">Careers</a>
+    </div>
+  </footer>
+  <!-- Footer session end -->
+</body>
+
+</html>
